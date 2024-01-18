@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -26,7 +25,7 @@
                 <strong>Data di vendita: </strong>
                 {{ $comic->sale_date }}
             </li>
-            
+
         </ul>
-    </div>    
+    </div>
 @endsection
