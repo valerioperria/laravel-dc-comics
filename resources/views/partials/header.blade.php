@@ -1,0 +1,32 @@
+{{-- <nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+  </nav>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Bootstrap
+    </a>
+  </nav> --}}
+
+  <header>
+    {{-- <div>
+        <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo DC">
+    </div> --}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo DC">
+          <a class="navbar-brand" href="{{ route('home') }}">DC Comics</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ route('comics.index') }}">Comics</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
