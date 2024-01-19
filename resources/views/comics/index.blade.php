@@ -16,6 +16,7 @@
                         <img src="{{ $comic['thumb'] }}" alt="" class="w-75">
                         <h5>{{ $comic['title'] }}</h5>
                         <a class="btn btn-primary" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Dettagli</a>
+                        <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
                     </div>
                 @endforeach
             </div>
