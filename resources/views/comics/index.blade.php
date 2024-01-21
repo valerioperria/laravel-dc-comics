@@ -17,6 +17,12 @@
                         <h5>{{ $comic['title'] }}</h5>
                         <a class="btn btn-primary" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Dettagli</a>
                         <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
+
+                        <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST" class="d-inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger">Cancella</button>
+                        </form>
                     </div>
                 @endforeach
             </div>
